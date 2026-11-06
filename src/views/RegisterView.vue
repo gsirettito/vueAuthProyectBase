@@ -45,7 +45,7 @@
           Hemos enviado un correo a <strong>{{ email }}</strong>.
         </p>
         <p style="margin-bottom: 24px; font-size: 14px;">
-          Ábrelo en <a href="http://localhost:1080" target="_blank" style="color: #1055c9;">MailDev</a> para confirmar
+          Ábrelo en <a :href="maildevUrl" target="_blank" style="color: #1055c9;">Abrir MailDev</a> para confirmar
           tu cuenta.
         </p>
         <RouterLink to="/login" class="btn-primary" style="display: block; text-decoration: none;">
@@ -68,7 +68,8 @@ const passwordConfirm = ref('');
 const loading = ref(false);
 const registered = ref(false);
 const error = ref('');
-const role = ref('user');
+
+const maildevUrl = import.meta.env.VITE_MAILDEV_URL || 'http://localhost:1080';
 
 const handleRegister = async () => {
   error.value = '';
