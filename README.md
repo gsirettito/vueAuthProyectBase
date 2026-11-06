@@ -17,14 +17,14 @@ Proyecto base para aplicaciones web con autenticación, roles y panel de adminis
 
 1. Clona el repositorio.
 2. Instala las dependencias:
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 3. Crea un archivo `.env` basado en `.env.example`.
 4. Inicia el servidor de desarrollo:
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
 
 ## Configuración del Backend (PocketBase)
 1. Inicia PocketBase en el puerto 8090.
